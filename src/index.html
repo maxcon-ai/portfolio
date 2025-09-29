@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Creative Developer</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <canvas id="bg"></canvas>
+    <main>
+        <header>
+            <h1>John Doe</h1>
+            <p class="title">Creative Developer & 3D Enthusiast</p>
+            <div class="metrics-overview">
+                <div class="metric">
+                    <span id="projectsCompleted">0</span>
+                    <span class="label">Projects Completed</span>
+                </div>
+                <div class="metric">
+                    <span id="clientSatisfaction">0</span>
+                    <span class="label">Client Satisfaction %</span>
+                </div>
+                <div class="metric">
+                    <span id="codeLines">0</span>
+                    <span class="label">Lines of Code</span>
+                </div>
+                <div class="metric">
+                    <span id="contributions">0</span>
+                    <span class="label">GitHub Contributions</span>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <p>Scroll to explore</p>
+                <div class="arrow"></div>
+            </div>
+        </header>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm a passionate developer with 5+ years of experience crafting digital experiences. I specialize in creating immersive web applications using modern technologies like Three.js, WebGL, and React.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or creating 3D art.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="./assets/images/project1.jpg" alt="Project 1">
+                    <h3>Immersive 3D Gallery</h3>
+                    <p>A WebGL-powered virtual art gallery showcasing interactive 3D sculptures.</p>
+                    <div class="tech-stack">
+                        <span>Three.js</span>
+                        <span>WebGL</span>
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./assets/images/project2.jpg" alt="Project 2">
+                    <h3>AI Visual Explorer</h3>
+                    <p>Real-time visualization of AI decision-making processes using particle systems.</p>
+                    <div class="tech-stack">
+                        <span>TensorFlow.js</span>
+                        <span>Three.js</span>
+                        <span>Vue</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./assets/images/project3.jpg" alt="Project 3">
+                    <h3>Interactive Data Viz</h3>
+                    <p>3D visualization of complex datasets with interactive exploration features.</p>
+                    <div class="tech-stack">
+                        <span>D3.js</span>
+                        <span>Three.js</span>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Analytics</h2>
+            <div class="analytics-grid">
+                <div class="chart-container">
+                    <h3>Technical Proficiency</h3>
+                    <canvas id="skillsChart"></canvas>
+                </div>
+                <div class="stats-container">
+                    <div class="skill-stats">
+                        <div class="stat-row">
+                            <h4>Frontend Development</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%;" data-value="95%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <h4>3D Graphics & WebGL</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;" data-value="90%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <h4>Backend Development</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;" data-value="85%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <h4>UI/UX Design</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;" data-value="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="performance-metrics">
+                <h3>Project Performance</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="chart-container-small">
+                            <canvas id="projectsChart"></canvas>
+                        </div>
+                        <div class="metric-details">
+                            <h4>Project Success Rate</h4>
+                            <p>85% successfully completed projects with high client satisfaction</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="date">2025</div>
+                                <div class="content">
+                                    <h4>Senior Developer</h4>
+                                    <p>Led development of 3 major WebGL projects</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="date">2024</div>
+                                <div class="content">
+                                    <h4>Tech Lead</h4>
+                                    <p>Managed team of 5 developers</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="date">2023</div>
+                                <div class="content">
+                                    <h4>Full Stack Developer</h4>
+                                    <p>Developed 10+ web applications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Let's Create Something Amazing</h2>
+            <p>I'm always open to discussing new projects and creative ideas.</p>
+            <div class="contact-links">
+                <a href="mailto:john@example.com" class="contact-button">Email Me</a>
+                <a href="https://github.com" target="_blank" class="contact-button">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="contact-button">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
